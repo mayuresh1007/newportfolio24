@@ -1,0 +1,70 @@
+portfolio-website/
+├── app/
+│   ├── layout.tsx               # Layout file for common UI (e.g., header, footer)
+│   ├── page.tsx                 # Home page (default route)
+│   ├── about/
+│   │   └── page.tsx             # About page
+│   ├── contact/
+│   │   └── page.tsx             # Contact page
+│   ├── works/
+│   │   └── page.tsx             # Works/Projects page
+│   ├── experience/
+│   │   └── page.tsx             # Experience page
+│   ├── certification/
+│   │   └── page.tsx             # Certifications page
+│   ├── blogs/
+│   │   ├── page.tsx             # Blogs listing page (e.g., `/blogs`)
+│   │   └── [slug]/
+│   │       └── page.tsx         # Dynamic blog post page (e.g., `/blogs/my-first-blog`)
+├── public/                      # Public assets like images, icons, etc.
+├── styles/
+│   └── globals.css              # Global CSS file
+├── components/                  # Reusable components (e.g., navbar, footer, card)
+│   ├── Header.tsx
+│   ├── Footer.tsx
+│   ├── BlogCard.tsx             # Blog card for listing on the blogs page
+│   ├── ProjectCard.tsx
+├── utils/                       # Utility functions
+├── next.config.js               # Next.js configuration
+├── tsconfig.json                # TypeScript configuration
+└── package.json                 # Dependencies and scripts
+
+
+
+------------------------------------------with backend--------------------------------------
+
+portfolio-website/
+├── app/
+│   ├── api/
+│   │   ├── blogs/
+│   │   │   ├── route.ts        # API route for blogs (GET, POST requests, etc.)
+│   │   ├── contact/
+│   │   │   └── route.ts        # API route for handling contact form submissions
+│   ├── layout.tsx              # Layout file for common UI (e.g., header, footer)
+│   ├── page.tsx                # Home page (default route)
+│   ├── about/
+│   │   └── page.tsx            # About page
+│   ├── contact/
+│   │   └── page.tsx            # Contact page
+│   ├── works/
+│   │   └── page.tsx            # Works/Projects page
+│   ├── experience/
+│   │   └── page.tsx            # Experience page
+│   ├── certification/
+│   │   └── page.tsx            # Certifications page
+│   ├── blogs/
+│   │   ├── page.tsx            # Blogs listing page (e.g., `/blogs`)
+│   │   └── [slug]/
+│   │       └── page.tsx        # Dynamic blog post page (e.g., `/blogs/my-first-blog`)
+├── public/                     # Public assets like images, icons, etc.
+├── styles/
+│   └── globals.css             # Global CSS file
+├── components/                 # Reusable components (e.g., navbar, footer, card)
+│   ├── Header.tsx
+│   ├── Footer.tsx
+│   ├── BlogCard.tsx            # Blog card for listing on the blogs page
+│   ├── ProjectCard.tsx
+├── utils/                      # Utility functions
+├── next.config.js              # Next.js configuration
+├── tsconfig.json               # TypeScript configuration
+└── package.json                # Dependencies and scripts

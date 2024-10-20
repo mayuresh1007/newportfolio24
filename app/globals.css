@@ -1,4 +1,4 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -24,4 +24,55 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+} */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default styles */
+:root {
+  --background-light: #f8fafc;
+  --foreground-light: #020024;
+  --background-dark: #020024;
+  --foreground-dark: #f8fafc;
 }
+
+html {
+  color-scheme: light dark; /* Supports system dark/light modes */
+}
+
+/* Ensure global light and dark mode color variables are used */
+body {
+  /* Smooth transitions between themes */
+  /* @apply transition-colors duration-300;  */
+  color: var(--foreground-light);
+  background-color: var(--background-light);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Tailwind's dark mode classes will apply on the 'dark' class */
+.dark body {
+  color: var(--foreground-dark);
+  background-color: var(--background-dark);
+}
+
+@layer base {
+  /* For elements inside the body */
+  body {
+    @apply bg-slate-50 text-gray-900; /* Light mode default */
+  }
+
+  /* Dark mode styles */
+  .dark body {
+    @apply bg-black text-gray-100; /* Dark mode default */
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
